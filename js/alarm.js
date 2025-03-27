@@ -82,7 +82,7 @@ btn.addEventListener("click", () => {
 	let hour = selc1.value;
 	let minute = selc2.value;
 	let AM_PM = selc3.value;
-	let SRC = "../music/"+sound.value
+	let SRC = "music/"+sound.value
 	let zero;
 	minute.toString().length === 1 ? zero = "0" : zero = ""
 	console.log(`${hour.toString()}:${zero+minute.toString()}:00 ${AM_PM}`)
