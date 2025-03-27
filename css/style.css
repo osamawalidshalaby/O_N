@@ -1,0 +1,159 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #F5EFFF;
+  --main-color-alt: #CDC1FF;
+  --main-transition: 0.3s;
+  --main-padding-top: 60px;
+  --main-padding-bottom: 90px;
+  --Button-color: #A294F9;
+}
+
+.grid {
+  display: grid;
+  gap: 1.8rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+nav {
+  background-color: var(--main-color-alt);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  font-family: "Irish Grover", system-ui;
+  width: 160px;
+  height: 64px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user .name {
+  background-color: #Fff;
+  width: 85px;
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: var(--main-padding-top);
+}
+
+main h2 {
+  text-align: center;
+  font-family: "Irish Grover", system-ui;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.projects {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.projects .project {
+  background-color: #Fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.projects .project .img img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project .info p {
+  text-align: center;
+  color: #6c6868;
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 1.5;
+}
+
+.project .info .btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--Button-color);
+  text-align: center;
+}
+

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --c1:rgb(74, 151, 240);
+    --c2:rgb(255, 255, 255);
+    --c3:rgb(162, 203, 250);
+}
+
+@keyframes hez{
+    0%{
+        transform: rotateZ(5deg);
+    }
+    50%{
+        transform: rotateZ(-5deg);
+    }
+}
+
+body{
+    background-color: var(--c1);
+}
+.container main{
+    background-color: var(--c2);
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    width: 400px;
+    height: 410px;
+}
+.container main img{
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left:calc(200px - 50px);
+}
+.container main h3{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#selction{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+#selction select{
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+.Title{
+    transition: 0.3S;
+    width: 86%;
+    height: 50px;
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;text-align: center;
+}
+.btn{
+    transition: 0.3S;
+    width: 86%;
+    height: 50px;
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--c3);
+}
+.btn:hover{
+    background-color: var(--c1);
+}
+.btn:active{
+    background-color: var(--c3);
+}
+.stop{
+    background-color: rgb(255, 90, 90);
+}
+.stop:hover{
+    background-color: red;
+}
+.stop:active{
+    background-color: rgb(255, 90, 90);
+}
+
+
+.hez{
+    animation: hez 0.1s linear infinite both;
+}
